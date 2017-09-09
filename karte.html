@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+        <script type="text/javascript" src="geodaten.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+  </head>
+  <body>
+    <h1>NO2 > 40 Belastete Stra&szlig;en in Hamburg</h1>
+    Zum Download alle Addressen die maximal 40 Meter von der Stra&szlig;enmitte entfernt liegen:
+    <ul>
+    <li><a href="NO2_IST_2014_Adressen.csv">Als CSV Datei (UTF-8)</a>
+    <li><a href="NO2_IST_2014_Adressen.ods">Als ODS / Excel Datei</a>
+      </ul>
+    <div id="map" style="width: 900px; height: 600px;"></div>
+
+    <h3>Datenquelle</h3>
+      <p>Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung und  Beh&ouml;rde f&uuml;r Umwelt und Energie</p>
+      <ul>
+	<li><a href="http://openstreetmap.org/">http://openstreetmap.org/</a> <a href="http://www.openstreetmap.org/copyright">Lizenz</a>
+       <li><a href="https://fragdenstaat.de/a/24262">https://fragdenstaat.de/a/24262</a></li>
+      <li><a href="http://suche.transparenz.hamburg.de/dataset/immissionsberechnung-luftreinhalteplan">http://suche.transparenz.hamburg.de/dataset/immissionsberechnung-luftreinhalteplan</a></li>
+      <li><a href="http://suche.transparenz.hamburg.de/dataset/alkis-adressen-hamburg5">http://suche.transparenz.hamburg.de/dataset/alkis-adressen-hamburg5</a></li>
+      </ul>
+      Datenlizenz:
+      <a href="https://www.govdata.de/dl-de/by-2-0">Deutschland-Namensnennung-Version 2.0</a>
+
+      
+      
+    <script>
+      initmap();
+    </script>
+  </body>
+  </html>
